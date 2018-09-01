@@ -1,0 +1,28 @@
+// Nut.cpp: implementation of the CNut class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Nut.h"
+#include "Resource.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CNut::CNut()
+{
+	m_hp = 1000;
+	CResource::LoadImg(CResource::m_nut, m_Idle_Img, 4);
+	SetAnimType("idle");
+}
+
+CNut::~CNut()
+{
+
+}
+
+void CNut::Timething()
+{
+
+}
