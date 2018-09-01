@@ -1,0 +1,47 @@
+// Bg.h: interface for the CBg class.
+//
+//////////////////////////////////////////////////////////////////////
+#include "cv.h"
+#include "highgui.h"
+
+
+#if !defined(AFX_BG_H__C9ABEB5D_2BE6_436C_9607_C182F28045A2__INCLUDED_)
+#define AFX_BG_H__C9ABEB5D_2BE6_436C_9607_C182F28045A2__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+/**
+* @class CBg
+* @brief  ±³¾°Àà
+*
+* ±³¾°Àà ´¢´æ×Å±³¾°ºÍ»æ»­±³¾°
+*/
+class CBg
+{
+public:
+	/**
+	* @brief Show
+	*
+	*½«±³¾°Í¼»æ»­µ½´°¿ÚÉÏ
+	* @param *img  ±³¾°Í¼Ö¸Õë  
+	* 
+	*/
+	void Show(IplImage* img);
+	/**
+	* @brief  Draw
+	*
+	*Ë¢ÐÂ±³¾°Í¼£¬¸üÐÂ±³¾°Í¼
+	* @param ÎÞ
+	* 
+	*/
+	void Draw();
+	CBg();
+	virtual ~CBg();
+	IplImage* m_img;   /**< ±³¾°Í¼Ö¸Õë */
+	IplImage* m_clone;  /**< ±³¾°Í¼¿ËÂ¡Í¼Ö¸Õë */
+
+};
+
+#endif // !defined(AFX_BG_H__C9ABEB5D_2BE6_436C_9607_C182F28045A2__INCLUDED_)
+
