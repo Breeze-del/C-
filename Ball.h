@@ -16,7 +16,6 @@ using namespace std;
 * @class CBall
 * @brief 子弹类
 *
-
 * CBall  是静态游戏组件的派生类 抽象出所有子弹
 */
 class CBall : public CStillObj
