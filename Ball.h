@@ -14,9 +14,10 @@
 using namespace std;
 /**
 * @class CBall
-* @brief ×Óµ¯Àà
+* @brief å­å¼¹ç±»
 *
-* CBall  ÊÇ¾²Ì¬ÓÎÏ·×é¼şµÄÅÉÉúÀà ³éÏó³öËùÓĞ×Óµ¯
+
+* CBall  æ˜¯é™æ€æ¸¸æˆç»„ä»¶çš„æ´¾ç”Ÿç±» æŠ½è±¡å‡ºæ‰€æœ‰å­å¼¹
 */
 class CBall : public CStillObj
 {
@@ -24,24 +25,24 @@ public:
 	/**
 	* @brief Setspeed
 	*
-	*³õ»¯Ê¼ËÙ¶È
-	* @param  speed=10£»
+	*åˆåŒ–å§‹é€Ÿåº¦
+	* @param  speed=10ï¼›
 	* 
 	*/
 	void Setspeed(int speed = 10);
 	/**
 	* @brief Move
 	*
-	*ÒÆ¶¯º¯Êı
-	* @param ÎŞ
+	*ç§»åŠ¨å‡½æ•°
+	* @param æ— 
 	* 
 	*/
 	void Move();
 	/**
 	* @brief SetType
 	*
-	*¸Ä±äÎïÌåµÄ×´Ì¬
-	* @param  type  ×´Ì¬Á¿
+	*æ”¹å˜ç‰©ä½“çš„çŠ¶æ€
+	* @param  type  çŠ¶æ€é‡
 	* 
 	*/
 	void SetType(string type);
@@ -50,31 +51,31 @@ public:
 	/**
 	* @brief Getm_isdead
 	*
-	*»ñµÃËÀÍö×´Ì¬
-	* @param ÎŞ
-	* @return int  ·µ»ØËÀÍö×´Ì¬Öµ
+	*è·å¾—æ­»äº¡çŠ¶æ€
+	* @param æ— 
+	* @return int  è¿”å›æ­»äº¡çŠ¶æ€å€¼
 	*/
 	int Getm_dead();
 	/**
 	* @brief Changem_dead
 	*
-	*¸Ä±ä×Óµ¯ËÀÍö×´Ì¬±äÁ¿
-	* @param dead ËÀÍö×´Ì¬
+	*æ”¹å˜å­å¼¹æ­»äº¡çŠ¶æ€å˜é‡
+	* @param dead æ­»äº¡çŠ¶æ€
 	* 
 	*/
 	void Changem_dead(int dead);
 	/**
 	* @brief Getm_type
 	*
-	*»ñµÃ×Óµ¯ÀàĞÍ
-	* @param ÎŞ
-	* @return int ·µ»Ø×Óµ¯ÀàĞÍ 1ÎªÆÕÍ¨×Óµ¯ 2Îª±ù×Óµ¯
+	*è·å¾—å­å¼¹ç±»å‹
+	* @param æ— 
+	* @return int è¿”å›å­å¼¹ç±»å‹ 1ä¸ºæ™®é€šå­å¼¹ 2ä¸ºå†°å­å¼¹
 	*/
 	int Getm_type();
 private:
-	int m_speed;    /**< ×Óµ¯ËÙ¶È */
-	int m_dead;     /**< ÊÇ·ñËÀÍö */
-	int m_type;     /**< ×Óµ¯ÀàĞÍ 1ÎªÆÕÍ¨×Óµ¯ 2Îªº®±ù×Óµ¯ */
+	int m_speed;    /**< å­å¼¹é€Ÿåº¦ */
+	int m_dead;     /**< æ˜¯å¦æ­»äº¡ */
+	int m_type;     /**< å­å¼¹ç±»å‹ 1ä¸ºæ™®é€šå­å¼¹ 2ä¸ºå¯’å†°å­å¼¹ */
 };
 
 #endif // !defined(AFX_BALL_H__8F73354A_9D03_465E_92C5_9492E53ADBA2__INCLUDED_)
